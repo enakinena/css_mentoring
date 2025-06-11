@@ -4,7 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS Урок 1</title>
+    <title>CSS Урок 1_атрибут_style</title>
+    <!-- <link rel="stylesheet" href="./styles.css" /> -->
   </head>
-  <body></body>
+  <body>
+    <!-- Подключение стилей в разметке -->
+    <!-- <p style="color: red">Параграф с красным текстом</p>
+
+    <p style="color: green; font-weight: 700">
+      Параграф с зелёным и жирным текстом
+    </p> -->
+    <!-- Лучший способ подключения стилей в отдельном файле -->
+    <!-- <p>Параграф с бирюзовым текстом</p>
+    <a href="/">Ссылка розового цвета</a> -->
+    <!-- селекторы это этакие ключи доступа к определённым элементам разметки:
+    p {} -->
+
+    <header>"Шапка" сайта</header>
+    <p>Параграф</p>
+    <a href="/">Ссылка</a>
+    <section>Секция 1</section>
+    <section>Секция 2</section>
+    <section>Секция 3</section>
+    <!-- Каскад - это механизм определяющий порядок применения стилей к элементу -->
+    <!-- Специфичность - вес правила. Чем он выше тем он главнее -->
+    <style>
+      p {
+        color: red !important;
+      }
+    </style>
+    <p style="color: green">Какого цвета этот параграф</p>
+  </body>
 </html>

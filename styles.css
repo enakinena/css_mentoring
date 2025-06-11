@@ -1,0 +1,25 @@
+/* p {
+  color: teal;
+}
+
+a {
+  color: hotpink;
+} */
+
+header {
+  background-color: bisque;
+}
+
+p {
+  color: seagreen;
+}
+
+a {
+  color: tomato;
+}
+
+section {
+  height: 30px;
+  margin-bottom: 5px;
+  background-color: deepskyblue;
+}

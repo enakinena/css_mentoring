@@ -1,87 +1,167 @@
-.box {
-  width: 100px;
-  height: 100px;
-  margin: 20px;
-  padding: 30px;
-  border: 5px solid indianred;
-}
-
-.box2 {
-  /* display: block;
-    (задавать не обязательно, тег div - блочный по умолчанию) */
-  border: 5px solid indianred;
+div {
   width: 200px;
-  /* height: 100px;  */
-  /* у всех тегов значение свойства height по умолчанию это авто */
+  height: 200px;
 }
 
-span {
-  /* display: inline;
-    (задавать не обязательно, тег span - строчный по умолчанию) */
-  /* высота как и у блочного типа отображения, также равна высоте внутренного контента */
-  border: 5px solid indianred;
-}
-
-.span-two {
-  /* по умолчанию как и inline подстраивает ширину и высоту элемента под его содержимое.
-    Однако если мы захотим прописать строчно-блочному элементу конкретную ширину и высоту, то это 
-    заработает */
-  display: inline-flex;
-  width: 150px;
-  height: 100px;
-  border: 5px solid indianred;
-}
-
-.box-5 {
-  display: block;
+.box-1 {
+  padding: 30px;
   background-color: palevioletred;
 }
 
+.box-2 {
+  padding: 10px 50px;
+  background-color: sandybrown;
+}
+
+.box-3 {
+  padding: 50px 100px 150px;
+  background-color: lightseagreen;
+}
+
+.box-4 {
+  padding: 50px 100px 150px 200px;
+  background-color: lightseagreen;
+}
+
+.box-5 {
+  padding-top: 60px;
+  background-color: forestgreen;
+}
+
 .box-6 {
-  display: inline;
-  background-color: darkturquoise;
+  padding-right: 60px;
+  background-color: cornflowerblue;
 }
 
 .box-7 {
-  display: inline-block;
-  background-color: tomato;
+  padding-bottom: 60px;
+  background-color: bisque;
 }
 
 .box-8 {
-  display: none;
+  padding-left: 60px;
+  background-color: darkcyan;
 }
 
 .box-9 {
-  width: 200px;
-  height: 200px;
-
-  padding: 15px 40px;
-  background-color: moccasin;
-  border: 10px solid red;
-  /* теперь итоговая фактическая ширина элемента 300px, а высота 250px.
-  Т.к к изначально заданным значения width и height прибавляются внутренние отпусты от паддинг,
-  и свойства бордер */
+  /* отступы сверху и снизу, свойство: padding-block */
+  padding-block: 100px;
+  background-color: yellow;
 }
 
 .box-10 {
-  width: 200px;
-  height: 200px;
-
-  margin: 50px;
-
-  padding: 15px 40px;
-
-  background-color: mediumturquoise;
+  /* отступы по горизонтали (сверху и справа), свойство: padding-inline */
+  padding-inline: 100px;
+  background-color: tomato;
 }
+
+/* значение внутренних отступов в padding не может быть отрицательным */
+
+/* внешние отступы margin в отличии от внутренних padding не являются непосредственной частью элемента*/
 
 .box-11 {
-  width: 200px;
-  height: 200px;
-  padding: 15px 40px;
-  background-color: mediumorchid;
-  border: 10px solid red;
+  margin: 30px;
+  background-color: palevioletred;
 }
 
-.normal-size {
-  box-sizing: border-box;
+.box-12 {
+  margin: 10px 50px;
+  background-color: sandybrown;
+}
+
+.box-13 {
+  margin: 50px 100px 150px;
+  background-color: lightseagreen;
+}
+
+.box-14 {
+  margin: 50px 100px 150px 200px;
+  background-color: lightseagreen;
+}
+
+.box-15 {
+  margin-top: 60px;
+  background-color: forestgreen;
+}
+
+.box-16 {
+  margin-right: 60px;
+  background-color: cornflowerblue;
+}
+
+.box-17 {
+  margin-bottom: 60px;
+  background-color: bisque;
+}
+
+.box-18 {
+  margin-left: 60px;
+  background-color: darkcyan;
+}
+
+.box-19 {
+  /* отступы сверху и снизу, свойство: padding-block */
+  margin-block: 100px;
+  background-color: yellow;
+}
+
+.box-20 {
+  /* отступы по горизонтали (сверху и справа), свойство: padding-inline */
+  margin-inline: 100px;
+  background-color: tomato;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bordered-wrapper {
+  width: 300px;
+  border: 2px dashed black;
+}
+
+/* У элемента с классом box есть обёртка с классом bordered-wrapper  */
+/* значение auto говорит браузеру о том, чтобы он сам выбрал значение подходящего отпуста */
+.box {
+  width: 200px;
+  height: 200px;
+  margin-inline: auto;
+  background-color: seagreen;
+}
+
+.box-21 {
+  width: 200px;
+  height: 200px;
+  /* margin: 0 (значение по умолчанию) */
+
+  background-color: palevioletred;
+}
+
+.box-22 {
+  width: 150px;
+  height: 150px;
+
+  margin-top: -50px;
+
+  background-color: sandybrown;
+}
+
+.box-23 {
+  margin-bottom: 50px;
+  background-color: coral;
+}
+
+.box-24 {
+  margin-top: 100px;
+  background-color: lightpink;
+}
+
+.box-25 {
+  margin-bottom: 100px;
+  padding: 50px;
+  background-color: coral;
+}
+
+.box-26 {
+  background-color: lightpink;
 }

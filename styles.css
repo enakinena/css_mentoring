@@ -1,88 +1,87 @@
-p {
-  color: red;
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  padding: 30px;
+  border: 5px solid indianred;
 }
 
-a {
-  color: peru;
+.box2 {
+  /* display: block;
+    (задавать не обязательно, тег div - блочный по умолчанию) */
+  border: 5px solid indianred;
+  width: 200px;
+  /* height: 100px;  */
+  /* у всех тегов значение свойства height по умолчанию это авто */
 }
 
-li {
-  color: purple;
+span {
+  /* display: inline;
+    (задавать не обязательно, тег span - строчный по умолчанию) */
+  /* высота как и у блочного типа отображения, также равна высоте внутренного контента */
+  border: 5px solid indianred;
 }
 
-.my-super-text {
-  color: gold;
-  font-size: 22px;
+.span-two {
+  /* по умолчанию как и inline подстраивает ширину и высоту элемента под его содержимое.
+    Однако если мы захотим прописать строчно-блочному элементу конкретную ширину и высоту, то это 
+    заработает */
+  display: inline-flex;
+  width: 150px;
+  height: 100px;
+  border: 5px solid indianred;
 }
 
-.not-super-text {
-  color: grey;
+.box-5 {
+  display: block;
+  background-color: palevioletred;
 }
 
-.big {
-  font-size: 24px;
+.box-6 {
+  display: inline;
+  background-color: darkturquoise;
 }
 
-.red {
-  color: indianred;
+.box-7 {
+  display: inline-block;
+  background-color: tomato;
 }
 
-.blue {
-  color: deepskyblue;
+.box-8 {
+  display: none;
 }
 
-.bold {
-  font-weight: 700;
+.box-9 {
+  width: 200px;
+  height: 200px;
+
+  padding: 15px 40px;
+  background-color: moccasin;
+  border: 10px solid red;
+  /* теперь итоговая фактическая ширина элемента 300px, а высота 250px.
+  Т.к к изначально заданным значения width и height прибавляются внутренние отпусты от паддинг,
+  и свойства бордер */
 }
 
-/* Селектор по атрибуту */
-[placeholder] {
-  border: 3px solid darkturquoise;
+.box-10 {
+  width: 200px;
+  height: 200px;
+
+  margin: 50px;
+
+  padding: 15px 40px;
+
+  background-color: mediumturquoise;
 }
 
-[type="number"] {
-  box-shadow: 3px 3px 3px 3px indianred;
+.box-11 {
+  width: 200px;
+  height: 200px;
+  padding: 15px 40px;
+  background-color: mediumorchid;
+  border: 10px solid red;
 }
 
-[type="tel"] {
-  box-shadow: 3px 3px 3px 3px #7bf178;
-}
-
-/* * {
-  border: 1px solid black;
-} */
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-section p {
-  color: seagreen;
-}
-
-section p span {
-  color: darkred;
-}
-
-h1,
-h2,
-h3 {
-  color: darkred;
-}
-
-section > h2 {
-  color: red;
-}
-
-h2 + p {
-  color: aquamarine;
-}
-
-.error_message {
-  color: red;
-  visibility: hidden;
-}
-
-.input.is-invalid + .error_message {
-  visibility: visible;
+.normal-size {
+  box-sizing: border-box;
 }

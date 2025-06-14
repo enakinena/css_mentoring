@@ -1,72 +1,73 @@
-.red-text {
-  color: red;
+/* div {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+} */
+
+.box-1 {
+  background-color: palevioletred;
 }
 
-.yellow-bg {
-  background-color: rgb(255, 255, 0);
+.box-2 {
+  background-color: rgb(243 209 123);
 }
 
-.green-border {
-  border: 2px solid #00ff00;
+.box-3 {
+  background-color: #e8b5e8;
 }
 
-.pink-outline {
-  outline: 2px solid #f6a7ffc6;
+.box-4 {
+  background-color: hsl(30 100% 50%);
 }
 
-.blue-shadow {
-  box-shadow: 0 0 0 5px lightskyblue;
+.box-5 {
+  width: 600px;
+  height: 600px;
+  background-color: lightskyblue;
+
+  background-image: url(https://steamuserimages-a.akamaihd.net/ugc/1840284294241408541/BAAED020A613B1AFD1B9AF2F8CF5BF2BC9C95A8B/?imw=512&imh=310&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true);
 }
 
-.red-color {
-  color: red;
+.box-6 {
+  width: 1000px;
+  height: 1060px;
+  background-color: lightskyblue;
+  background-image: url(https://steamuserimages-a.akamaihd.net/ugc/1840284294241408541/BAAED020A613B1AFD1B9AF2F8CF5BF2BC9C95A8B/?imw=512&imh=310&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true);
+  /* background-repeat: repeat-y; */
+  /* background-repeat: space; изображение будет заполняться по осям пока не заполнит всё пространство*/
+  /* background-repeat: round - изображение будет заполнять весь элемент. В отличии от space не добавляет доп. пространство, а растягивается размер изображения. */
+  /* background-repeat: no-repeat - отключает повторение изображения по осям. */
+  /* background-position: center/left/right/bottom/top */
+  /* background-size: отвечает за размер элемента (contain, cover) */
 }
 
-.magenta-color {
-  color: magenta;
+div {
+  width: 500px;
+  height: 600px;
+  margin-bottom: 50px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
-.red-color2 {
-  color: rgb(255 0 0);
+.box-7 {
+  background-color: lightskyblue;
+  background-image: url("./img/scale_1200_imresizer.jpg");
 }
 
-.green-color2 {
-  color: rgb(0 255 0);
-}
-/* слэш 0.25 - это значение прозрачности. Может быть от 0 до 1 */
-.red-color-opacity {
-  color: rgb(255 0 0 / 0.25);
+.box-8 {
+  background-color: lightcoral;
+  background-image: url("./img/scale_1200_imresizer.jpg");
+  background-size: contain;
 }
 
-.red-color3 {
-  color: #ff0000;
+.box-9 {
+  background-color: lightgreen;
+  background-image: url("./img/scale_1200_imresizer.jpg");
 }
 
-.green-color3 {
-  color: #00ff00;
-}
-
-.blue-color3 {
-  color: #0000ff;
-}
-
-.red-color4 {
-  color: hsl(0 100% 50%);
-}
-
-green-color4 {
-  color: hsl(120, 100%, 50%);
-}
-
-.blue-color4 {
-  color: hsl(240 100% 50%);
-}
-
-.transparent-color {
-  color: transparent;
-}
-
-.current-color-border {
-  color: orange;
-  border: 2px solid currentColor;
+.box-10 {
+  background-color: lightgoldenrodyellow;
+  background-image: url("./img/scale_1200_imresizer.jpg");
 }

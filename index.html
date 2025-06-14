@@ -4,59 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Урок 7. Цвета в CSS.</title>
+    <title>Урок 8. CSS</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <p class="red-text yellow-bg green-border pink-outline blue-shadow">
-      Красный текст на жёлтом фоне в зелёной рамке с розовой обводкой и голубой
-      сплошной линией
-    </p>
+    <!-- background-color: задаём элелементу фоновый цвет -->
+    <div class="box-1"></div>
+    <div class="box-2"></div>
+    <div class="box-3"></div>
+    <div class="box-4"></div>
+    <!-- background-image: задаёт элементу фоновое изображение или градиент. -->
+    <div class="box-5"></div>
     <br />
     <hr />
     <br />
-    <p class="red-color">Я текст с color: red</p>
-
-    <p class="magenta-color">Я текст с color: magenta</p>
+    <!-- background-repeat: repeat - повторяет изображения по обеим осеям (х и y) -->
+    <!-- repeat-y (повторение изображения по вертикали. repeat-x: по горизонтали) -->
+    <div class="box-6"></div>
+    <hr />
     <br />
     <br />
     <hr />
-    <!-- Цвет через rgb -->
-    <p class="red-color2">Я текст с color: rgb (255 0 0)</p>
-
-    <p class="green-color2">Я текст с color: rgb (0 255 0)</p>
-
-    <p class="red-color-opacity">Я текст с color: rgb (0 255 0 / 0.75)</p>
-    <br />
+    <div class="box-7"></div>
+    <div class="box-8"></div>
+    <div class="box-9"></div>
+    <div class="box-10"></div>
     <hr />
-    <br />
-    <p class="red-color3">Я текст с color: #FF0000</p>
-    <p class="green-color3">Я текст с color: #00FF00</p>
-    <p class="blue-color3">Я текст с color: #0000FF</p>
-    <br />
-    <hr />
-    <br />
-    <!-- hsl : Оттенок / Насыщеннсоть / Светлота -->
-    <!-- К формату также можно применить opacity для обозначения прозрачности -->
-    <p class="red-color4">Я текст с color: hsl(0 100% 50%)</p>
-    <p class="green-color4">Я текст с color: hsl(120 100% 50%)</p>
-    <p class="blue-color4">Я текст с color: hsl(240 100% 50%)</p>
-    <br />
-    <hr />
-    <br />
-    <p>
-      До прозрачного текста...
-      <span class="transparent-color"> я текст с color: transparent </span>
-      ...после прозрачного текста
-    </p>
-
-    <button class="transparent-color">Кнопка с прозрачным текстом</button>
-    <br />
-    <br />
-    <hr />
-    <!-- значение currentColor является ссылкой на значение цвета которое указано в свойстве color  -->
-    <p class="current-color-border">
-      Я текст с color: orange и border: 2px solid currentColor
-    </p>
+    <!-- background-attachment: scroll (задаёт правило фона при скролле.
+      фон жёстко привязан к элементу)-->
+    <!-- background-attachment: fixed (фон будет зафиксирован относительно прокрученного элемента при скролле страницы.) -->
   </body>
 </html>

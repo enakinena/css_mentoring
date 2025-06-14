@@ -1,167 +1,149 @@
-div {
-  width: 200px;
-  height: 200px;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* код reset или normazile */
+
+/* reset используется если нужно, чтобы все стили были сброшены в ноль. Чтобы ни один отступ не мешал */
+
+/* normalize - если хотите привести во всех браузерах стили к единому виду, и заодно пофиксить баги,
+и недочёты браузера. */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
-
-.box-1 {
-  padding: 30px;
-  background-color: palevioletred;
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
-
-.box-2 {
-  padding: 10px 50px;
-  background-color: sandybrown;
-}
-
-.box-3 {
-  padding: 50px 100px 150px;
-  background-color: lightseagreen;
-}
-
-.box-4 {
-  padding: 50px 100px 150px 200px;
-  background-color: lightseagreen;
-}
-
-.box-5 {
-  padding-top: 60px;
-  background-color: forestgreen;
-}
-
-.box-6 {
-  padding-right: 60px;
-  background-color: cornflowerblue;
-}
-
-.box-7 {
-  padding-bottom: 60px;
-  background-color: bisque;
-}
-
-.box-8 {
-  padding-left: 60px;
-  background-color: darkcyan;
-}
-
-.box-9 {
-  /* отступы сверху и снизу, свойство: padding-block */
-  padding-block: 100px;
-  background-color: yellow;
-}
-
-.box-10 {
-  /* отступы по горизонтали (сверху и справа), свойство: padding-inline */
-  padding-inline: 100px;
-  background-color: tomato;
-}
-
-/* значение внутренних отступов в padding не может быть отрицательным */
-
-/* внешние отступы margin в отличии от внутренних padding не являются непосредственной частью элемента*/
-
-.box-11 {
-  margin: 30px;
-  background-color: palevioletred;
-}
-
-.box-12 {
-  margin: 10px 50px;
-  background-color: sandybrown;
-}
-
-.box-13 {
-  margin: 50px 100px 150px;
-  background-color: lightseagreen;
-}
-
-.box-14 {
-  margin: 50px 100px 150px 200px;
-  background-color: lightseagreen;
-}
-
-.box-15 {
-  margin-top: 60px;
-  background-color: forestgreen;
-}
-
-.box-16 {
-  margin-right: 60px;
-  background-color: cornflowerblue;
-}
-
-.box-17 {
-  margin-bottom: 60px;
-  background-color: bisque;
-}
-
-.box-18 {
-  margin-left: 60px;
-  background-color: darkcyan;
-}
-
-.box-19 {
-  /* отступы сверху и снизу, свойство: padding-block */
-  margin-block: 100px;
-  background-color: yellow;
-}
-
-.box-20 {
-  /* отступы по горизонтали (сверху и справа), свойство: padding-inline */
-  margin-inline: 100px;
-  background-color: tomato;
-}
-
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-.bordered-wrapper {
-  width: 300px;
-  border: 2px dashed black;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-/* У элемента с классом box есть обёртка с классом bordered-wrapper  */
-/* значение auto говорит браузеру о том, чтобы он сам выбрал значение подходящего отпуста */
 .box {
   width: 200px;
   height: 200px;
-  margin-inline: auto;
-  background-color: seagreen;
-}
-
-.box-21 {
-  width: 200px;
-  height: 200px;
-  /* margin: 0 (значение по умолчанию) */
-
-  background-color: palevioletred;
-}
-
-.box-22 {
-  width: 150px;
-  height: 150px;
-
-  margin-top: -50px;
-
-  background-color: sandybrown;
-}
-
-.box-23 {
-  margin-bottom: 50px;
-  background-color: coral;
-}
-
-.box-24 {
-  margin-top: 100px;
-  background-color: lightpink;
-}
-
-.box-25 {
-  margin-bottom: 100px;
-  padding: 50px;
-  background-color: coral;
-}
-
-.box-26 {
-  background-color: lightpink;
+  padding: 20px;
+  border: 10px solid red;
 }

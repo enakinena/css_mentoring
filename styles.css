@@ -1,26 +1,72 @@
-/* @font-face {
-  font-family: "Roboto";
-  src: url(./font/Roboto-Regular.woff2) format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-} */
-
-/* значение swap применяют когда отображение текста является приоритетной задачей.
-  но отображение текста другим шрифтом, не нарушит нормального использования страницы. */
-
-/* @font-face {
-  font-family: "Roboto";
-  src: url(./font/Roboto-Bold.woff2) format("woff2");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-} */
-
-.custom-font {
-  font-family: "Roboto";
+.red-text {
+  color: red;
 }
 
-.bold {
-  font-weight: 700;
+.yellow-bg {
+  background-color: rgb(255, 255, 0);
+}
+
+.green-border {
+  border: 2px solid #00ff00;
+}
+
+.pink-outline {
+  outline: 2px solid #f6a7ffc6;
+}
+
+.blue-shadow {
+  box-shadow: 0 0 0 5px lightskyblue;
+}
+
+.red-color {
+  color: red;
+}
+
+.magenta-color {
+  color: magenta;
+}
+
+.red-color2 {
+  color: rgb(255 0 0);
+}
+
+.green-color2 {
+  color: rgb(0 255 0);
+}
+/* слэш 0.25 - это значение прозрачности. Может быть от 0 до 1 */
+.red-color-opacity {
+  color: rgb(255 0 0 / 0.25);
+}
+
+.red-color3 {
+  color: #ff0000;
+}
+
+.green-color3 {
+  color: #00ff00;
+}
+
+.blue-color3 {
+  color: #0000ff;
+}
+
+.red-color4 {
+  color: hsl(0 100% 50%);
+}
+
+green-color4 {
+  color: hsl(120, 100%, 50%);
+}
+
+.blue-color4 {
+  color: hsl(240 100% 50%);
+}
+
+.transparent-color {
+  color: transparent;
+}
+
+.current-color-border {
+  color: orange;
+  border: 2px solid currentColor;
 }

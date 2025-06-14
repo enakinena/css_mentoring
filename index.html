@@ -4,52 +4,59 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Урок 6. Шрифты</title>
+    <title>Урок 7. Цвета в CSS.</title>
     <link rel="stylesheet" href="./styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-
-      body {
-        font-family: "Inter";
-      }
-    </style>
   </head>
-  <!-- Свойство font-family как и другие параметры шрифта наследуемое. Исключение: input, textarea, select, button -->
   <body>
-    <p style="font-weight: 100">Thin 100</p>
-    <p style="font-weight: 200">ExtraLight 200</p>
-    <p style="font-weight: 300">Light 300</p>
-    <p style="font-weight: 400">Regular 400</p>
-    <p style="font-weight: 500">Medium 500</p>
-    <p style="font-weight: 600">SemiBold 600</p>
-    <p style="font-weight: 700">Bold 700</p>
-    <p style="font-weight: 800">ExtraBold 800</p>
-    <p style="font-weight: 900">Black 900</p>
-    <br />
-    <br />
-    <hr />
-    <br />
-    <p>Я шрифт Inter</p>
-    <p class="custom-font">Я Roboto шрифт</p>
-    <p class="custom-font bold">Я Roboto шрифт в bold начертании.</p>
-    <br />
-    <hr />
-    <br />
-    <p>Я стандартный шрифт</p>
-    <p class="custom-font">Я Roboto шрифт</p>
-    <p class="custom-font bold">
-      Я Roboto шрифт в bold начертании, залитый через link
+    <p class="red-text yellow-bg green-border pink-outline blue-shadow">
+      Красный текст на жёлтом фоне в зелёной рамке с розовой обводкой и голубой
+      сплошной линией
     </p>
-    <!-- Свойство font-family: задаёт семейство шрифта -->
-    <!-- Свойство font-weight: задаёт начертание шрифта (его жирность) -->
-    <!-- Свойство font-size: задаёт размер текста -->
-    <!-- Размер значения шрифта по умолчанию это 16px -->
-    <!-- line-height: задаёт межстрочный интервал -->
+    <br />
+    <hr />
+    <br />
+    <p class="red-color">Я текст с color: red</p>
+
+    <p class="magenta-color">Я текст с color: magenta</p>
+    <br />
+    <br />
+    <hr />
+    <!-- Цвет через rgb -->
+    <p class="red-color2">Я текст с color: rgb (255 0 0)</p>
+
+    <p class="green-color2">Я текст с color: rgb (0 255 0)</p>
+
+    <p class="red-color-opacity">Я текст с color: rgb (0 255 0 / 0.75)</p>
+    <br />
+    <hr />
+    <br />
+    <p class="red-color3">Я текст с color: #FF0000</p>
+    <p class="green-color3">Я текст с color: #00FF00</p>
+    <p class="blue-color3">Я текст с color: #0000FF</p>
+    <br />
+    <hr />
+    <br />
+    <!-- hsl : Оттенок / Насыщеннсоть / Светлота -->
+    <!-- К формату также можно применить opacity для обозначения прозрачности -->
+    <p class="red-color4">Я текст с color: hsl(0 100% 50%)</p>
+    <p class="green-color4">Я текст с color: hsl(120 100% 50%)</p>
+    <p class="blue-color4">Я текст с color: hsl(240 100% 50%)</p>
+    <br />
+    <hr />
+    <br />
+    <p>
+      До прозрачного текста...
+      <span class="transparent-color"> я текст с color: transparent </span>
+      ...после прозрачного текста
+    </p>
+
+    <button class="transparent-color">Кнопка с прозрачным текстом</button>
+    <br />
+    <br />
+    <hr />
+    <!-- значение currentColor является ссылкой на значение цвета которое указано в свойстве color  -->
+    <p class="current-color-border">
+      Я текст с color: orange и border: 2px solid currentColor
+    </p>
   </body>
 </html>

@@ -1,64 +1,64 @@
-.box-1 {
-  width: 100px;
-  height: 100px;
-  background-color: lightpink;
-
-  border: 10px solid deepskyblue;
-  /* border-color: teal tomato goldenrod; */
-  border-style: solid;
-  border-width: 5px;
-  /* то же самое, что и набор свойств:border:
-  border-width: 10px;
-  border-style: solid;
-  border-color: deepskyblue */
-  /* border-color: deepskyblue deeppink, darkgreen; (Можно указать несколько цветов для отображения рамки в разных цветах.) */
-  /* свойство border задаёт рамку вокруг всего элемента. */
-  /* border-right-color: deepskyblue - задаётся цвет рамки справа, ит.д.*/
-  /* рамка от бордер является частью блочной модели, и по умолчанию не включена в  размер элемента заданой через св-ва width и height */
-
-  /* outline - задаёт обводку элемента, но не влияет на его фактические размеры в отличии от св-ва рамки бордер. Обводку оутлайн нельзя задать только для одной или нескольких сторон. Применяется одновременно со всех сторон.*/
-  outline: 5px solid gold;
-
-  /* outline-offset - по умолчанию = 0.
-  задаёт смещение обводки относительно краёв элемента. Обычно в px. Можно задавать в отрицательных значениях. */
+* {
+  box-sizing: border-box;
 }
-
-.box-2 {
-  width: 100px;
-  height: 100px;
-  background-color: cornflowerblue;
-
-  /* border-radius: 15px; */
-  /* border-radius не имеет отношение к св-ву border. 
-  С помощью этого св-ва можно закруглить углы. Обычно используют либо px либо %. */
-  /* можно перечислить до 4-х значений для каждого угла по порядку.
-   */
-  border-radius: 0 30px 80% 30px;
-  /* border-radius: 50% - фигура круг.; */
-  /* https://9elements.github.io/fancy-border-radius/ (генератор округлений) */
-}
-
-/* Тени. Для задания тени элементу существует св-во
-box-shadow */
-.box-3 {
-  width: 100px;
-  height: 100px;
-  background-color: lightpink;
-  box-shadow: -5px 10px 5px inset;
-  /* box-shadow: -5px 10px - первое число отвечает за смещение тени, 
-  по оси X (по горизонтали), второе по оси Y (по вертикали). Третье значение
-  отвечает за радиус размытия. Если добавить четвёртое значение, то оно будет
-  отвечать за размер этой тени  */
-  /* Свойство inset позволяет поменять расположение тени с внешней на внутреннюю */
-}
-
 body {
-  background-color: white;
+  margin: 0;
 }
-
-img {
-  /* filter: none; */
-  filter: drop-shadow(15px 15px 15px red);
-  /* фильтров много, удобнее смотреть через консоль разработчика */
-  /* filter: drop-shadow (15px 15px 15px red) - тень должна идти не по границам элемента, а по границе самой картинки */
+.box {
+  width: 300px;
+  height: 300px;
+  background-color: lightcoral;
+  /* position: static;  */ /* дефолтное значение у всех элементов, по умолчанию*/
+  position: absolute; /* --- not save a place in flow*/
+  left: 50px;
+  top: 50px;
+  /* right: 50px; */
+  /* bottom: 100px; */
+  /* inset: 150px; */
+  z-index: 1;
+}
+.box2 {
+  background-color: lightskyblue;
+  z-index: 1;
+  left: 100px;
+}
+.container {
+  border: 2px solid black;
+  margin: 150px;
+  position: relative; /* --- save a place in flow*/
+}
+.square {
+  width: 200px;
+  height: 200px;
+  background-color: lightcoral;
+  position: absolute; /* --- not save a place in flow*/
+  /* position: fixed; */ /* --- not save a place in flow*/
+  /* position: sticky; */ /* --- save a place in flow*/
+  top: 10px;
+  left: 10px;
+  /* z-index: 0; */
+}
+.square2 {
+  background-color: lightgreen;
+  position: relative; /* --- save a place in flow*/
+  left: 300px;
+}
+.empty {
+  width: 100%;
+  height: 2000px;
+  border: 1px solid grey;
+}
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: lightpink;
+  position: sticky; /* --- save a place in flow*/
+  left: 0;
+  top: 0;
+  z-index: 9999;
+}
+.footer {
+  width: 100%;
+  height: 80px;
+  background-color: lightslategray;
 }

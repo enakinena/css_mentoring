@@ -1,73 +1,64 @@
-/* div {
+.box-1 {
   width: 100px;
   height: 100px;
-  margin-bottom: 10px;
-} */
+  background-color: lightpink;
 
-.box-1 {
-  background-color: palevioletred;
+  border: 10px solid deepskyblue;
+  /* border-color: teal tomato goldenrod; */
+  border-style: solid;
+  border-width: 5px;
+  /* то же самое, что и набор свойств:border:
+  border-width: 10px;
+  border-style: solid;
+  border-color: deepskyblue */
+  /* border-color: deepskyblue deeppink, darkgreen; (Можно указать несколько цветов для отображения рамки в разных цветах.) */
+  /* свойство border задаёт рамку вокруг всего элемента. */
+  /* border-right-color: deepskyblue - задаётся цвет рамки справа, ит.д.*/
+  /* рамка от бордер является частью блочной модели, и по умолчанию не включена в  размер элемента заданой через св-ва width и height */
+
+  /* outline - задаёт обводку элемента, но не влияет на его фактические размеры в отличии от св-ва рамки бордер. Обводку оутлайн нельзя задать только для одной или нескольких сторон. Применяется одновременно со всех сторон.*/
+  outline: 5px solid gold;
+
+  /* outline-offset - по умолчанию = 0.
+  задаёт смещение обводки относительно краёв элемента. Обычно в px. Можно задавать в отрицательных значениях. */
 }
 
 .box-2 {
-  background-color: rgb(243 209 123);
+  width: 100px;
+  height: 100px;
+  background-color: cornflowerblue;
+
+  /* border-radius: 15px; */
+  /* border-radius не имеет отношение к св-ву border. 
+  С помощью этого св-ва можно закруглить углы. Обычно используют либо px либо %. */
+  /* можно перечислить до 4-х значений для каждого угла по порядку.
+   */
+  border-radius: 0 30px 80% 30px;
+  /* border-radius: 50% - фигура круг.; */
+  /* https://9elements.github.io/fancy-border-radius/ (генератор округлений) */
 }
 
+/* Тени. Для задания тени элементу существует св-во
+box-shadow */
 .box-3 {
-  background-color: #e8b5e8;
+  width: 100px;
+  height: 100px;
+  background-color: lightpink;
+  box-shadow: -5px 10px 5px inset;
+  /* box-shadow: -5px 10px - первое число отвечает за смещение тени, 
+  по оси X (по горизонтали), второе по оси Y (по вертикали). Третье значение
+  отвечает за радиус размытия. Если добавить четвёртое значение, то оно будет
+  отвечать за размер этой тени  */
+  /* Свойство inset позволяет поменять расположение тени с внешней на внутреннюю */
 }
 
-.box-4 {
-  background-color: hsl(30 100% 50%);
+body {
+  background-color: white;
 }
 
-.box-5 {
-  width: 600px;
-  height: 600px;
-  background-color: lightskyblue;
-
-  background-image: url(https://steamuserimages-a.akamaihd.net/ugc/1840284294241408541/BAAED020A613B1AFD1B9AF2F8CF5BF2BC9C95A8B/?imw=512&imh=310&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true);
-}
-
-.box-6 {
-  width: 1000px;
-  height: 1060px;
-  background-color: lightskyblue;
-  background-image: url(https://steamuserimages-a.akamaihd.net/ugc/1840284294241408541/BAAED020A613B1AFD1B9AF2F8CF5BF2BC9C95A8B/?imw=512&imh=310&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true);
-  /* background-repeat: repeat-y; */
-  /* background-repeat: space; изображение будет заполняться по осям пока не заполнит всё пространство*/
-  /* background-repeat: round - изображение будет заполнять весь элемент. В отличии от space не добавляет доп. пространство, а растягивается размер изображения. */
-  /* background-repeat: no-repeat - отключает повторение изображения по осям. */
-  /* background-position: center/left/right/bottom/top */
-  /* background-size: отвечает за размер элемента (contain, cover) */
-}
-
-div {
-  width: 500px;
-  height: 600px;
-  margin-bottom: 50px;
-
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
-.box-7 {
-  background-color: lightskyblue;
-  background-image: url("./img/scale_1200_imresizer.jpg");
-}
-
-.box-8 {
-  background-color: lightcoral;
-  background-image: url("./img/scale_1200_imresizer.jpg");
-  background-size: contain;
-}
-
-.box-9 {
-  background-color: lightgreen;
-  background-image: url("./img/scale_1200_imresizer.jpg");
-}
-
-.box-10 {
-  background-color: lightgoldenrodyellow;
-  background-image: url("./img/scale_1200_imresizer.jpg");
+img {
+  /* filter: none; */
+  filter: drop-shadow(15px 15px 15px red);
+  /* фильтров много, удобнее смотреть через консоль разработчика */
+  /* filter: drop-shadow (15px 15px 15px red) - тень должна идти не по границам элемента, а по границе самой картинки */
 }

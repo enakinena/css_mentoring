@@ -2,25 +2,54 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Position</title>
+    <title>Урок 11</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <!-- <div class="box"></div>
-    <div class="box box2"></div> -->
-    <header class="header"></header>
-    <div class="container">
-      <div class="square"></div>
-      <!-- <div class="square square2"></div> -->
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae a,
-        dignissimos fuga enim eveniet quia deleniti, in corporis iste nisi, odit
-        animi optio nobis recusandae veniam voluptates! Exercitationem, placeat
-        nisi!
-      </p>
+    <div class="box-1"></div>
+    <div class="box-2"></div>
+    <div class="box-3"></div>
+    <br />
+    <hr />
+    <br />
+    <!-- Проценты. Относительная единица измерения.
+    При задании в процентах, всегда нужно задаваться вопросом. От чего.-->
+    <div class="box-4">Ширина 33%</div>
+    <div class="box-5">
+      Ширина 50%
+
+      <div class="inner">Ширина 70% от родителя</div>
     </div>
-    <div class="empty"></div>
-    <footer class="footer"></footer>
+    <br />
+    <hr />
+    <br />
+    <div class="wrapper">
+      <div class="box-6">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, omnis?
+      </div>
+    </div>
+
+    <h1>
+      <!-- em - задаёт размер относительно величины родительского шрифта.
+        -->
+      Я заголовок с font-size 40px,
+      <span> а текст внутри с font-size 0.5em, т.е. 20px </span>
+    </h1>
+    <br />
+    <hr />
+    <br />
+    <div class="box-7"></div>
+    <hr />
+    <!-- rem - похожа на em. Отличие. Различается тем, что не относительно родительского font-size.
+    А относительно значения font-size указанного для html -->
+    <p class="small-font-size">Я текст с font-size 0.75rem, т.е 7.5px</p>
+    <p class="base-font-size">Я текст с font-size 1.6rem, т.е 16px</p>
+    <br />
+    <hr />
+    <br />
+    <!-- vw/vh- (вьюпорт видс. Ширина вьюпорта (размера текущего окна браузера)). Т.е один процент от ширины/высоты окна браузера. -->
+    <nav class="menu">Меню</nav>
   </body>
 </html>

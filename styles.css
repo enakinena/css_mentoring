@@ -1,64 +1,75 @@
-* {
-  box-sizing: border-box;
-}
-body {
-  margin: 0;
-}
-.box {
-  width: 300px;
-  height: 300px;
-  background-color: lightcoral;
-  /* position: static;  */ /* дефолтное значение у всех элементов, по умолчанию*/
-  position: absolute; /* --- not save a place in flow*/
-  left: 50px;
-  top: 50px;
-  /* right: 50px; */
-  /* bottom: 100px; */
-  /* inset: 150px; */
-  z-index: 1;
-}
-.box2 {
+.box-1 {
   background-color: lightskyblue;
-  z-index: 1;
-  left: 100px;
+  width: 100px;
+  height: 100px;
 }
-.container {
-  border: 2px solid black;
-  margin: 150px;
-  position: relative; /* --- save a place in flow*/
-}
-.square {
+
+.box-2 {
+  background-color: lightpink;
   width: 200px;
   height: 200px;
-  background-color: lightcoral;
-  position: absolute; /* --- not save a place in flow*/
-  /* position: fixed; */ /* --- not save a place in flow*/
-  /* position: sticky; */ /* --- save a place in flow*/
-  top: 10px;
-  left: 10px;
-  /* z-index: 0; */
 }
-.square2 {
+
+.box-3 {
   background-color: lightgreen;
-  position: relative; /* --- save a place in flow*/
-  left: 300px;
+  width: 50px;
+  height: 50px;
 }
-.empty {
-  width: 100%;
-  height: 2000px;
-  border: 1px solid grey;
+
+.box-4 {
+  background-color: lightskyblue;
+  width: 33%;
+  height: 100px;
 }
-.header {
-  width: 100%;
-  height: 80px;
+
+.box-5 {
   background-color: lightpink;
-  position: sticky; /* --- save a place in flow*/
-  left: 0;
-  top: 0;
-  z-index: 9999;
+  width: 50%;
+  height: 100px;
 }
-.footer {
-  width: 100%;
-  height: 80px;
-  background-color: lightslategray;
+
+.inner {
+  background-color: lightgreen;
+  width: 70%;
+}
+
+.wrapper {
+  height: 200px;
+  background-color: pink;
+}
+
+.box-6 {
+  background-color: lightskyblue;
+  height: 50%;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h1 span {
+  font-size: 0.5em;
+}
+
+body {
+  font-size: 24px;
+}
+
+.box-7 {
+  width: 4em; /* 24px * 4 = 96px */
+  height: 3em; /* 24px * 3 = 72px */
+  background-color: aqua;
+}
+
+html {
+  font-size: 10px;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 30vw;
+  height: 100vh;
+  background-color: lightskyblue;
 }

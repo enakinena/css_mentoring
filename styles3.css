@@ -1,0 +1,29 @@
+.flex-container {
+  display: flex;
+
+  padding: 10px;
+  background-color: lightskyblue;
+  gap: 10px;
+
+  /* 
+  Значение по умолчанию:
+  flex-direction: row
+  */
+}
+
+.flex-element {
+  background-color: lightgreen;
+  padding: 10px;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-column-reverse {
+  flex-direction: column-reverse;
+}

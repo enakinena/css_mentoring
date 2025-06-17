@@ -1,0 +1,27 @@
+.flex-container {
+  display: flex;
+  background-color: lightskyblue;
+  padding: 10px;
+  gap: 10px;
+  height: 400px;
+}
+
+.flex-element {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  background-color: lightgreen;
+
+  flex-grow: 0; /* значение по умолчанию */
+}
+
+.wide {
+  flex-grow: 1;
+}
+
+.shrink {
+  flex-shrink: 1; /* значение по умолчанию */
+
+  /* чем больше значение, тем больше будет сжиматься элемент
+  в сравнении со своими соседями. При значении 0, флекс элемент не будет самопроизвольно сжиматься, игнорируя свои реальные размеры*/
+}

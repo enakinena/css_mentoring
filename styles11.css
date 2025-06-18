@@ -1,0 +1,29 @@
+.flex-container {
+  display: flex;
+
+  background-color: lightskyblue;
+  padding: 10px;
+  gap: 10px;
+  height: 300px;
+  flex-wrap: wrap;
+}
+
+.flex-element {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  background-color: lightgreen;
+  border: 2px solid;
+}
+
+.gap-50 {
+  gap: 50px 50px;
+}
+
+.column-gap-50 {
+  column-gap: 50px;
+}
+
+.row-gap-50 {
+  row-gap: 50px;
+}

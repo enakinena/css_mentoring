@@ -1,0 +1,29 @@
+.flex-container {
+  display: flex;
+
+  background-color: lightskyblue;
+  padding: 10px;
+  gap: 10px;
+  height: 200px;
+  flex-wrap: wrap;
+}
+
+.flex-element {
+  width: 200px;
+  padding: 10px;
+  background-color: lightgreen;
+
+  align-content: stretch;
+}
+
+.align-content-flex-start {
+  align-content: flex-start;
+}
+
+.align-content-flex-end {
+  align-content: flex-end;
+}
+
+.align-content-center {
+  align-content: center;
+}

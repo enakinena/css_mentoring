@@ -1,15 +1,33 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
+.with-before::before {
+  content: "(-:";
+  color: cornflowerblue;
 }
 
-.flex-container {
-  display: flex;
-  background-color: lightskyblue;
-  padding: 10px;
-  column-gap: 10px;
+.with-after::after {
+  content: ":-)";
+  color: green;
 }
 
-.flex-element {
+.with-red-placeholder::placeholder {
+  color: red;
+}
+
+.with-file-selector-button::file-selector-button {
   background-color: lightgreen;
-  padding: 10px;
+  font-weight: 700;
+  border: 2px solid darkblue;
+  border-radius: 10px;
+  height: 32px;
+}
+
+.with-first-letter::first-letter {
+  font-size: 3em;
+}
+
+.with-first-line::first-line {
+  text-decoration: underline;
+}
+
+.with-selection::selection {
+  background-color: pink;
 }

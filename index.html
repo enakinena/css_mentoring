@@ -4,27 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Урок 12. Flexbox</title>
+    <title>CSS псевдоэлементы. Урок 13</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <!-- Прямые дочерние элементы flex-container > flex-element's
-    И на них будут действовать правила flexbox -->
-    <!-- Основная ось. В данном случае горизонтальная (начало слева, конец справа)
-    Побочная ось. Вертикальная. Начало оси сверху, конец снизу -->
-    <div class="flex-container">
-      <div class="flex-element">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus
-        unde nemo minus temporibus distinctio voluptatum deleniti placeat beatae
-        ad officiis?
-      </div>
+    <p class="with-before">Элемент с псевдоэлементом ::before</p>
 
-      <div class="flex-element">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil,
-        doloremque? Doloribus recusandae earum, qui unde maiores voluptatibus
-        cumque cupiditate quo eos explicabo officiis quae? Possimus repellat
-        minus placeat laudantium consequatur?
-      </div>
-    </div>
+    <p class="with-after">Элемент с псевдоэлементом ::after</p>
+
+    <input class="with-red-placeholder" placeholder="Красный placeholder" />
+
+    <!-- <input type="file" /> -->
+    <input class="with-file-selector-button" type="file" />
+
+    <p class="with-first-letter">Элемент с псевдоэлементом ::first-letter</p>
+
+    <p class="with-first-line">
+      Элемент с псевдоэлементом <br />
+      ::first-line
+    </p>
+
+    <p class="with-selection">
+      Элемент с псевдоэлементом <br />
+      ::selection
+    </p>
   </body>
 </html>

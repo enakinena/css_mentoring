@@ -1,19 +1,89 @@
-.flex-container {
-  display: flex;
+input::placeholder {
+  color: red;
+  background-color: lightgray;
 }
 
-.inline-flex-container {
-  display: inline-flex;
+textarea::placeholder {
+  color: green;
+  font-weight: 700;
 }
 
-.flex-container,
-.inline-flex-container {
-  padding: 10px;
+.with-custom-file-button::file-selector-button {
+  height: 32px;
+  padding-inline: 12px;
+  color: #418dff;
+  background-color: #dad563;
+  border: 3px dashed #132954;
+  border-radius: 10px;
+}
+
+.special-first-letter::first-letter {
+  margin-right: 15px;
+  padding: 12px 24px;
+  font-size: 3em;
+  color: indianred;
+  background-color: skyblue;
+  border: 3px solid cadetblue;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 0.75);
+}
+
+.special-first-line::first-line {
+  text-transform: uppercase;
+  color: indianred;
+  background-color: skyblue;
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 0.75);
+}
+
+.custom-selection::selection {
+  color: whitesmoke;
+  background-color: coral;
+  text-shadow: 2px 2px 2px black;
+  text-decoration: underline;
+}
+
+.red-marker::marker {
+  color: red;
+}
+
+.smile-marker::marker {
+  content: "🙂";
+}
+
+.emoji-pseudo::before {
+  content: "👌";
+}
+
+.emoji-pseudo::after {
+  content: "🤙";
+}
+
+.gray-box-pseudo {
+  position: relative;
+  width: 100px;
+  height: 100px;
   background-color: lightskyblue;
-  column-gap: 10px;
 }
 
-.flex-element {
-  background-color: lightgreen;
-  padding: 10px;
+.gray-box-pseudo::after {
+  content: "";
+  position: absolute;
+  left: 90%;
+  top: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: darkgray;
+}
+
+.image-pseudo::after {
+  content: url("https://www.qualityhealth.org/wp-content/uploads/2020/02/kitten_480x360.jpg");
+}
+
+.attr-pseudo::after {
+  content: attr(date-example);
+  color: red;
+}
+
+.quote-pseudo::before {
+  content: open-quote;
 }

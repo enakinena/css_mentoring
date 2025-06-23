@@ -1,89 +1,62 @@
-input::placeholder {
+/* первый элемент */
+/* p:first-child {
   color: red;
-  background-color: lightgray;
-}
+} */
 
-textarea::placeholder {
+/* последний элемент */
+/* p:last-child {
+  color: lawngreen;
+} */
+
+/* выбрать нечётные элементы */
+
+/* p:nth-child(odd) {
+  color: blueviolet;
+} */
+
+/* выбрать чётные элементы */
+
+/* p:nth-child(even) {
+  color: rgb(226, 43, 113);
+} */
+
+/* получить доступ к конкретному элементу, например 2му */
+
+/* p:nth-child(2) {
+  color: blue;
+} */
+
+/* получить доступ к 3-му элементу с конца*/
+
+/* p:nth-last-child(3) {
+  color: cadetblue;
+} */
+
+/* выбирает каждый 3-ий элемент начиная с 3-го */
+/* p:nth-child(3n) {
+  color: rebeccapurple;
+} */
+
+/* выбрать первые 4-ре элемента */
+/* p:nth-child(-n + 4) {
   color: green;
-  font-weight: 700;
+} */
+
+/* выбрать последние 4-ре элемента */
+p:nth-last-child(-n + 4) {
+  color: green;
 }
 
-.with-custom-file-button::file-selector-button {
-  height: 32px;
-  padding-inline: 12px;
-  color: #418dff;
-  background-color: #dad563;
-  border: 3px dashed #132954;
-  border-radius: 10px;
+li:only-child {
+  /* выбирает элемент, который является единственным дочерним элементом своего родителя */
+  background-color: red;
 }
 
-.special-first-letter::first-letter {
-  margin-right: 15px;
-  padding: 12px 24px;
-  font-size: 3em;
-  color: indianred;
-  background-color: skyblue;
-  border: 3px solid cadetblue;
-  border-radius: 10px;
-  box-shadow: 0 0 10px 0 rgb(0 0 0 / 0.75);
+li:not(:last-child) {
+  margin-bottom: 10px;
 }
 
-.special-first-line::first-line {
-  text-transform: uppercase;
-  color: indianred;
-  background-color: skyblue;
-  box-shadow: 0 0 10px 0 rgb(0 0 0 / 0.75);
-}
-
-.custom-selection::selection {
-  color: whitesmoke;
-  background-color: coral;
-  text-shadow: 2px 2px 2px black;
-  text-decoration: underline;
-}
-
-.red-marker::marker {
-  color: red;
-}
-
-.smile-marker::marker {
-  content: "🙂";
-}
-
-.emoji-pseudo::before {
-  content: "👌";
-}
-
-.emoji-pseudo::after {
-  content: "🤙";
-}
-
-.gray-box-pseudo {
-  position: relative;
-  width: 100px;
-  height: 100px;
-  background-color: lightskyblue;
-}
-
-.gray-box-pseudo::after {
-  content: "";
-  position: absolute;
-  left: 90%;
-  top: 10px;
-  width: 100%;
-  height: 100%;
-  background-color: darkgray;
-}
-
-.image-pseudo::after {
-  content: url("https://www.qualityhealth.org/wp-content/uploads/2020/02/kitten_480x360.jpg");
-}
-
-.attr-pseudo::after {
-  content: attr(date-example);
-  color: red;
-}
-
-.quote-pseudo::before {
-  content: open-quote;
+/* таким селектором говорим, выбери тултип у которого нет класса is-active, и скрой его */
+.tooltip:not(.is-active) {
+  display: none;
 }

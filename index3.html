@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Псевдоклассы состояний</title>
+    <link rel="stylesheet" href="./styles3.css" />
+  </head>
+  <body>
+    <button class="hover-effect">Hover состояние</button>
+
+    <button class="focus-effect">Focus состояние</button>
+
+    <button class="focus-visible-effect">Focus-visible состояние</button>
+
+    <button class="active-effect">Active состояние</button>
+    <br />
+    <hr />
+    <br />
+    <button>Обычная кнопка</button>
+    <button disabled>Disabled кнопка</button>
+
+    <br />
+
+    <input value="Обычное поле ввода" style="margin-top: 20px" />
+    <input value="Disabled поле ввода" disabled />
+    <br />
+    <hr />
+    <br />
+    <input type="checkbox" id="checkbox-1" checked />
+    <label for="checkbox-1">Checkbox 1</label>
+    <br />
+    <hr />
+    <br />
+    <label class="checkbox">
+      <input
+        type="checkbox"
+        class="checkbox-control visually-hidden"
+        id="checkbox-1"
+      />
+      <span class="checkbox-emulator"></span>
+      <span class="checkbox-label"> Checkbox 1 </span>
+    </label>
+  </body>
+</html>

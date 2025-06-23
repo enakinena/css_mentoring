@@ -4,79 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>css псевдоэлементы</title>
+    <title>Урок 14. Псевдоклассы-1</title>
     <link rel="stylesheet" href="./styles2.css" />
   </head>
   <body>
-    <!-- placeholder (текст подсказка у полей ввода инпут и текстэриа) -->
-    <input placeholder="Красный placeholder на сером фоне" />
-
-    <br />
-
-    <textarea placeholder="Зелёный жирный placeholder"></textarea>
-    <br />
-    <br />
-    <hr />
-    <br />
-    <input type="file" />
-    <input class="with-custom-file-button" type="file" />
-    <br />
-    <hr />
-    <br />
-    <p>Lorem ipsum dolor sit amet.</p>
-
-    <p class="special-first-letter">Lorem ipsum dolor sit amet.</p>
+    <!-- Псевдоклассы пишутся с одним знаком двоеточия (псевдоэлементы с двумя) -->
+    <!-- https://nth-child.belter.io/ - наглядно увидеть как формула подействует на выборку элементов.  -->
+    <div>
+      <p>Параграф 1</p>
+      <p>Параграф 2</p>
+      <p>Параграф 3</p>
+      <p>Параграф 4</p>
+      <p>Параграф 5</p>
+      <p>Параграф 6</p>
+      <p>Параграф 7</p>
+      <p>Параграф 8</p>
+    </div>
     <br />
     <hr />
     <br />
-    <p>
-      Lorem ipsum dolor sit amet. <br />
-      Lorem ipsum dolor sit amet. <br />
-      Lorem ipsum dolor sit amet
-    </p>
-
-    <p class="special-first-line">
-      Lorem ipsum dolor sit amet. <br />
-      Lorem ipsum dolor sit amet. <br />
-      Lorem ipsum dolor sit amet
-    </p>
-
-    <p>Тест без кастомного ::selection</p>
-
-    <!-- псевдоэлемент selection (можно изменять цвет текста, цвет фона, тень, оформление,
-      подчёркивание) -->
-    <p class="custom-selection">Тест с кастомным ::selection</p>
-    <hr />
-    <br />
-    <!-- У элементов списка по умолчанию есть маркеры. (являются псевдоэлементами.
-      И доступ к ним через css происходит через селектор два двоеточия маркер) -->
     <ul>
-      <li>Элемент списка</li>
-      <li class="red-marker">Элемент списка</li>
-      <li>Элемент списка</li>
-      <li class="smile-marker">Элемент списка</li>
-      <li>Элемент списка</li>
+      <li>Первый элемент списка</li>
+      <li>Второй элемент списка</li>
+    </ul>
+
+    <ul>
+      <li>Единственный элемент списка</li>
     </ul>
     <br />
     <hr />
-    <p class="emoji-pseudo">
-      Текст с псевдоэлементами before и after и эмоджи в content
-    </p>
+    <br />
+    <ul>
+      <li>Item</li>
+      <li>Item</li>
+      <li>Item</li>
+      <li>Item</li>
+      <li>Item</li>
+    </ul>
 
-    <div class="gray-box-pseudo">
-      Элемент с псевдоэлементом с пустой строкой в content
-    </div>
-
-    <p class="image-pseudo">
-      Текст с псевдоэлементом after и изображением в content
-    </p>
-
-    <p class="attr-pseudo" data-example="Я значение из атрибута">
-      Текст с псевдоэлементом after и значением атрибута data-example в content:
-    </p>
-
-    <p class="quote-pseudo">
-      Текст с псевдоэлементом before и заданным типом кавычек в content
-    </p>
+    <div class="tooltip">Содержимое скрытого по умолчанию тултипа</div>
   </body>
 </html>

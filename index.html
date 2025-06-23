@@ -4,29 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS псевдоэлементы. Урок 13</title>
+    <title>Урок 14. Псевдоклассы.</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
+  <!-- Псевдоклассы (это селекторы к элементам, которые удовлетворяют определённым условиям.
+    Например - элемент находится в состоянии наведения курсора итд.) -->
   <body>
-    <p class="with-before">Элемент с псевдоэлементом ::before</p>
+    <ul>
+      <li>Элемент списка</li>
+      <li>Красный элемент списка</li>
+      <li>Элемент списка</li>
+    </ul>
 
-    <p class="with-after">Элемент с псевдоэлементом ::after</p>
+    <div class="modal">Модальное окно (скрыто, если не класса is-active)</div>
 
-    <input class="with-red-placeholder" placeholder="Красный placeholder" />
-
-    <!-- <input type="file" /> -->
-    <input class="with-file-selector-button" type="file" />
-
-    <p class="with-first-letter">Элемент с псевдоэлементом ::first-letter</p>
-
-    <p class="with-first-line">
-      Элемент с псевдоэлементом <br />
-      ::first-line
-    </p>
-
-    <p class="with-selection">
-      Элемент с псевдоэлементом <br />
-      ::selection
-    </p>
+    <a href="/">Наведи на меня</a>
   </body>
 </html>

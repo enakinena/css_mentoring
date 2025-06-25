@@ -1,10 +1,46 @@
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
+.box {
+  width: 100px;
+  height: 100px;
+  border: 2px solid indianred;
+
+  overflow: scroll;
+
+  /* clip (значение по умолчанию) */
 }
 
-.grid-elements {
-  min-height: 50px;
+button {
+  height: 30px;
+  padding-inline: 20px;
+  color: yellow;
+  font: inherit;
+  background-color: blue;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+
+  opacity: 1;
+}
+
+.counter {
+  padding: 10px;
+  background-color: brown;
+  display: inline-block;
+}
+
+button:active {
   background-color: lightskyblue;
+}
+
+.heart {
+  /* clip-path: circle(50%); */
+  /* clip-path: circle(50% at 120px 150px); */
+  /* at 120px 150px - по горизонтальной и вертикальной оси */
+
+  /* clip-path: ellipse(); */
+  /* задаёт обрезаемой части форму элипса */
+  /* растягивание по горизонтали и вертикали. Обязательно 2 значения */
+  margin-left: 10px;
+
+  /* clip-path: polygon(25% 0%, 75% 0%, 100% 80%, -100% 150%); */
+  /* позволяет задать многоугольник практическил любой сложности */
 }

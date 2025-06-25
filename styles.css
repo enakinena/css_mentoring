@@ -1,11 +1,10 @@
-li:nth-child(2) {
-  color: red;
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
 }
 
-.modal:not(.is-acite) {
-  display: none;
-}
-
-a:hover {
-  box-shadow: 2px 4px 10px 10px rgb(100 149 237 / 0/5);
+.grid-elements {
+  min-height: 50px;
+  background-color: lightskyblue;
 }

@@ -1,72 +1,46 @@
-button {
-  background-color: orange;
-  border-radius: 10px;
-  padding: 10px;
-  border: 2px solid black;
+.grid-container {
+  display: grid;
+  gap: 10px;
+
+  grid-template-columns: 30%; /* занимает 30% от ширины родителя */
+  grid-auto-columns: 50px 100px; /* вторая и последующие колонки занимают ширины по повторяющемуя паттерну - чередуются*/
+  grid-auto-flow: column;
 }
 
-/* hover (проявляется при наведении) */
-.hover-effect:hover {
-  background-color: pink;
+.grid-element {
+  background-color: lightskyblue;
 }
 
-.focus-effect:focus {
-  box-shadow: 0 0 10px 10px rgb(255, 0, 0 / 0.5);
+.content {
+  min-height: 50vh;
+  display: grid;
+  grid-template-columns: 25% auto 15%;
+  grid-template-areas:
+    "menu catalog advertisement"
+    "menu catalog advertisement"
+    "menu catalog ."
+    "menu order order";
+
+  gap: 50px;
+  /* gap: 30px 50px - сначала значение по горизонтали, затем по вертикали */
 }
 
-.focus-visible-effect:focus-visible {
-  box-shadow: 0 0 10px 10px rgb(255, 0, 0 / 0.5);
+.menu {
+  grid-area: menu;
+  background-color: lightskyblue;
 }
 
-/* active (проявляется в момент клика на элемент) */
-.active-effect:active {
-  color: indigo;
-  background-color: yellow;
+.catalog {
+  grid-area: catalog;
+  background-color: lightgreen;
 }
 
-/* button:disabled {
-} - состояние интерактивного элемента когда с ним нельзя взаимодействовать*/
-
-input:checked {
-  box-shadow: 0 0 0 4px green;
+.advertisement {
+  grid-area: advertisement;
+  background-color: palevioletred;
 }
 
-/* реализация кастомного чек-бокса */
-.visually-hidden {
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  margin: -1px !important;
-  border: 0 !important;
-  padding: 0 !important;
-  white-space: nowrap !important;
-  clip-path: inset(100%) !important;
-  clip: rect(0 0 0 0) !important;
-  overflow: hidden !important;
-}
-
-.checkbox {
-  display: flex;
-  column-gap: 0.5em;
-  user-select: none;
-}
-
-.checkbox-control:not(:checked) + .checkbox-emulator::after {
-  display: none;
-}
-
-.checkbox-emulator {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 1em;
-  height: 1em;
-  border: 2px solid lightskyblue;
-  border-radius: 5px;
-  background-color: paleturquoise;
-}
-
-.checkbox-emulator::after {
-  content: "✓";
-  color: rebeccapurple;
+.order {
+  grid-area: order;
+  background-color: cadetblue;
 }

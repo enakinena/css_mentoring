@@ -1,76 +1,40 @@
-.box {
+.box-1,
+.box-2 {
   width: 100px;
   height: 100px;
   background-color: lightskyblue;
-
-  cursor: auto; /*значение по умолчанию*/
-
-  cursor: none;
-  /*при наведении на элемент
-  курсор будет не виден вовсе*/
-
-  cursor: default;
-  /* стандартный курсор */
-
-  cursor: text;
-  /* курсор вертикальной черты */
-
-  cursor: pointer;
-  /* курсор руки */
+  border: 5px solid indianred;
+  box-shadow: 4px -2px 12px 4px rgb(0, 0, 0 / 0.5);
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 5px;
-  /* background-color: lightsteelblue; */
-  /* width: 100%; */
-  /* margin: 0 auto; */
-}
+.box-2 {
+  transform: none; /* значение по умолчанию */
+  /* transform отвечает за трансформацию, смещение, маштабирование, поворачивание, искажение */
+  transform: translateX(50px); /*смещает элемент по горизонтали*/
+  transform: translateY(50px); /* смещает элемент по вертикали*/
+  /* трансформации на элементе никаким образом не влияют на соседние */
+  transform: translate(
+    50px,
+    50px
+  ); /*смещает элемент по горизонтали и вертикали*/
 
-.grid-container div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #4c6faf;
-  font-size: 16px;
-  padding: 6px;
-  border-radius: 4px;
-  cursor: default;
-  width: 100px;
-  height: 100px;
-}
+  transform: scaleX(
+    1
+  ); /* отвечает за масштабирование по оси Х. По умолчанию значение 1.*/
+  /* при значении -1, элемент будет отзеркален */
+  /* scaleY (масштабирование по вертикали) */
 
-.box2,
-button {
-  user-select: auto; /*значение по умолчанию.
-  Определеяет то, можно ли выделить текст в элементе*/
+  transform: rotate(
+    45deg
+  ); /*отвечает за поворот элемента.
+    по умолчанию значение 0deg (0 градусов)*/
 
-  user-select: none; /*отключает возможность выделять текст в элементе*/
-}
+  transform: skewX(
+    340deg
+  ); /*отвечает за искажение элемента по оси Х. Указывается отрицательное или положительное число с ед. измерения deg, turn*/
+  /* искажение по обеим осям используется обобщённое св-во skew */
 
-.box3 {
-  padding: 10px;
-  background-color: lightskyblue;
-
-  pointer-events: auto; /*значение по умолчанию*/
-  /* отвечает за возможность пользователя нажимать на элемент */
-
-  pointer-events: none;
-}
-
-textarea {
-  resize: both; /*значение по умолчанию*/
-}
-
-.box4 {
-  width: 100px;
-  height: 100px;
-  background-color: lightcyan;
-
-  overflow: hidden;
-  resize: none; /*иконка сбоку элемента на расширение / уменьшение элемента*/
-  /* both - можно менять размер, иконка появится сбоку элемента */
-  /* horizontal - позволяет менять размер по горизонтали */
-  /* vertical - меняет размер по вертикали */
+  translate: 0 0; /* значение по умолчанию*/
+  scale: 1 1; /*значение по умолчанию*/
+  rotate: 0deg; /*значение по умолчанию*/
 }

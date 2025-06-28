@@ -1,0 +1,35 @@
+.inner {
+  width: 0;
+  height: 100%;
+  background-color: lightskyblue;
+  transition: 1s ease;
+}
+
+body:hover .inner {
+  width: 100%;
+}
+
+.box {
+  width: 100%;
+  border: 1px solid black;
+}
+
+.easy-in {
+  transition-timing-function: ease-in;
+}
+
+.easy-out {
+  transition-timing-function: ease-out;
+}
+
+.easy-in-out {
+  transition-timing-function: ease-in-out;
+}
+
+.linear {
+  transition-timing-function: linear;
+}
+
+.cubic-bezier {
+  transition-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
+}

@@ -1,6 +1,16 @@
-html {
-  scroll-behavior: smooth;
-  /* auto - мгновенная прокрутка страницы до футера (дэфолтное значение) */
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: lightskyblue;
+  border: 5px solid indianred;
+}
 
-  /* smooth - плавная прокрутка */
+.inner {
+  width: 75px;
+  height: 75px;
+  background-color: palegreen;
+  rotate: 30deg;
+
+  transform-origin: 50% 50%; /*значение по умолчанию*/
+  /*по умолчанию у свойства t-origin значение центр, или 50% у осиХ и 50% у осиУ*/
 }

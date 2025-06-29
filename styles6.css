@@ -1,0 +1,29 @@
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  background-color: lightsalmon;
+}
+
+.banner-title {
+  font-size: 100px;
+  text-transform: uppercase;
+}
+
+/* при высоте 400px и ниже, 
+цвет заголовка сменится на красный. */
+@media (max-height: 400px) {
+  .banner-title {
+    color: red;
+  }
+}
+
+/* при высоте 900px и выше, 
+цвет заголовка сменится на зелёный. */
+@media (min-height: 900px) {
+  .banner-title {
+    color: green;
+  }
+}

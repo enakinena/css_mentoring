@@ -1,0 +1,10 @@
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: salmon;
+
+  min-height: 100vh; /*равняется 100% от высоты вьюпорта*/
+  /* если в секцию добавить контента то она не поломается,
+  её высота автоматически подстроится под содержимое */
+}

@@ -1,21 +1,13 @@
-/* анимации начинаются с объявления групп правил ключевых кадров. */
-@keyframes move-to-right {
-  50% {
-    rotate: 45deg;
-  }
-
-  100% {
-    translate: 75vw;
-  }
-}
-
 .box {
-  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  background-color: tomato;
   height: 100px;
-  border: 2px solid black;
 
-  animation-name: move-to-right;
-  animation-duration: 1s;
-  animation-delay: 0.5s;
-  animation-iteration-count: 3; /*такое кол-во раз будет выполняться анимация после загрузки страницы*/
+  width: 50%; /* ширина элемента в 50% означает что он будет занимать по умолчанию 50% от ширины экрана*/
+  /* меньше 200 и больше 500px ширины он стать технически не сможет */
+  min-width: 200px;
+  max-width: 500px;
 }

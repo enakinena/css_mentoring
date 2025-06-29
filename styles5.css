@@ -1,0 +1,34 @@
+.catalog-title {
+  font-size: 25px;
+}
+
+.catalog-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 0px;
+}
+
+.catalog-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightskyblue;
+  min-height: 100px;
+}
+
+@media (min-width: 401px) {
+  .catalog-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 701px) {
+  .catalog-title {
+    font-size: 48px;
+  }
+
+  .catalog-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

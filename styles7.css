@@ -1,0 +1,27 @@
+a {
+  text-decoration: none;
+  color: orangered;
+}
+
+/* позволяет определить тип устройства на который выводится печать. CTRL+P.
+К этой странице будут применены все свойства указанные в медиа принт. */
+@media print {
+  body {
+    font-size: 36px;
+  }
+
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+}
+
+button {
+  background-color: palegreen;
+}
+
+@media (hover: hover) {
+  button:hover {
+    background-color: crimson;
+  }
+}

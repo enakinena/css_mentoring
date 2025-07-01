@@ -1,37 +1,20 @@
-body {
-  --color-main: #20855e;
-  --color-accent: #ffc67c;
-  --border-radius: 4px;
-}
+.box {
+  /* корректные формулы в calc */
+  width: calc(10px + 20px);
+  height: calc(5% + 3% - 1%);
+  margin: calc(10px * 3);
+  padding: calc(30vw / 5);
+  font-size: calc(16px + (36 - 16) * ((100vw - 60px) / (1920 - 360)));
+  line-height: calc(1.5 / 0.85);
+  transition-duration: calc(1s * 3);
+  rotate: calc(360deg / 4);
+  translate: calc(100vw / (3 * 2));
+  opacity: calc(1 - 0.3);
+  z-index: calc(10 + 1);
 
-.button {
-  color: var(--color-main);
-  background-color: var(--color-accent);
-  border-radius: var(--border-radius);
-
-  box-shadow: var(--undefined-variable, 2px 2px 2px green);
-}
-
-.box-1 {
-  background-color: lightsalmon;
-
-  /*
-Доступна в текущем и во внутренних элементах
-*/
-
-  --custom-border: 2px solid red;
-
-  border: var(--custom-border);
-}
-
-.box-2 {
-  background-color: lightskyblue;
-
-  border: var(--custom-border);
-}
-
-.box-3 {
-  background-color: lightgreen;
-
-  border: var(--custom-border);
+  /* некорректные формулы в calc */
+  max-width: calc(75% * 100px);
+  max-height: calc(100vh / 30px);
+  /* если используем умножение или деление, то
+  справа от операнда (символа умножения или деления) должно быть число без ед. измерения */
 }

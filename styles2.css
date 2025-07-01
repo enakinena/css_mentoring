@@ -1,46 +1,22 @@
-.container {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.catalog-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 300px;
-  height: 300px;
-  /* border: 5px solid red; */
+  flex-wrap: wrap;
+  list-style: none;
 }
 
-.box-1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  height: 70%;
-  /* margin: 0 auto; */
-}
-
-.box-2 {
-  width: 200px;
-  height: 200px;
-}
-
-.box-1 {
-  background-color: lightsalmon;
-
-  --custom-border: 2px solid red;
-
-  border: var(--custom-border);
-}
-
-.box-2 {
-  /* Переопределяем переменную
-из верхней области видимости */
-
-  --custom-border: 5px solid blue;
+.catalog-item {
+  width: calc(100% / 3); /*размер колонки ровно треть от ширины родителя*/
+  min-height: 100px;
   background-color: lightskyblue;
-
-  border: var(--custom-border);
-}
-
-.box-3 {
-  background-color: lightgreen;
-
-  border: var(--custom-border);
+  border: 1px solid black;
 }

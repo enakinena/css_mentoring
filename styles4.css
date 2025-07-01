@@ -1,16 +1,13 @@
-body {
-  --color-main: #0c136e;
-  --color-accent: #64c7bf;
-}
+.menu {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 30px;
+  font-size: 32px;
+  background-color: lightskyblue;
 
-.button {
-  --buttonTextColor: var(--color-main);
-  --buttonBgColor: var(--color-accent);
-
-  display: inline-flex;
-  align-items: center;
-  height: 40px;
-  padding-inline: 24px;
-  color: var(--buttonTextColor);
-  background-color: var(--buttonBgColor);
+  width: clamp(200px, 30vw, 400px);
+  /* рекомендованное значение указано как 30vw, минимальное значение 200px, максимальное 400px */
 }

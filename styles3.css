@@ -1,32 +1,16 @@
-.container {
+.box {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 300px;
-  height: 300px;
-  border: 5px solid red;
-}
-
-.box-1 {
-  background-color: lightsalmon;
-
-  /*
-  Доступна в текущем и во внутренних элементах
-  */
-
-  --custom-border: 2px solid red;
-
-  border: var(--custom-border);
-}
-
-.box-2 {
+  min-height: 50px;
   background-color: lightskyblue;
 
-  border: var(--custom-border);
-}
+  /* min (принимает аргументами один или несколько значений через запятую, и браузер
+  среди них выберет наименьшее) */
 
-.box-3 {
-  background-color: lightgreen;
+  width: min(200px, 100% / 3);
 
-  border: var(--custom-border);
+  /* max(аналогичная функция.
+  выбирает наибольшое значение, среди переданных в функцию значений) */
+  width: max(250px, 50%);
 }

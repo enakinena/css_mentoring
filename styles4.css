@@ -1,0 +1,16 @@
+body {
+  --color-main: #0c136e;
+  --color-accent: #64c7bf;
+}
+
+.button {
+  --buttonTextColor: var(--color-main);
+  --buttonBgColor: var(--color-accent);
+
+  display: inline-flex;
+  align-items: center;
+  height: 40px;
+  padding-inline: 24px;
+  color: var(--buttonTextColor);
+  background-color: var(--buttonBgColor);
+}

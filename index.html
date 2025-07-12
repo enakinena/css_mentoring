@@ -6,32 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css" />
+    <!-- font Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <div class="header-logo">
-          <img src="./img/Logo.svg" alt="organick-logo" class="organick-logo" />
+        <div class="header-organick">
+          <img
+            src="./image/logo-organick.png"
+            class="logo-organick"
+            alt="logo-organick"
+          />
+          <span class="organick-text">Organick</span>
         </div>
         <nav class="navigation">
           <ul class="navigation-list">
@@ -43,7 +35,6 @@
             </li>
             <li class="navigation-item">
               <a href="#" class="navigation-link">Pages</a>
-              <img src="./img/strelka.png" alt="" class="arrow" />
             </li>
             <li class="navigation-item">
               <a href="#" class="navigation-link">Shop</a>
@@ -56,75 +47,32 @@
             </li>
           </ul>
         </nav>
-        <div class="header-button">
-          <button class="header-btn search__btn">
-            <img src="./img/Ellipse 61.png" alt="" class="icon-ellipse" />
-            <img src="./img/Vector.svg" alt="" class="icon-zoom" />
-          </button>
-          <button class="header-btn cart__btn">
-            <img
-              src="./img/Ellipse 59.png"
-              alt="menu_buy"
-              class="icon_ellipse-buy"
-            />
-            <img src="./img/Icon.svg" alt="icon_buy" class="icon" />
-            <span class="cart-count">Cart (0)</span>
-          </button>
+        <div class="header-btn__actions">
+          <div class="search">
+            <input type="text" class="search-btn_input" />
+            <button class="search-btn">
+              <img
+                src="./image/loop.svg"
+                alt="search-loop"
+                width="21px"
+                height="21px"
+              />
+            </button>
+          </div>
+          <div class="basket-wrapper">
+            <button class="basket-btn">
+              <img
+                src="./image/basket_logo.svg"
+                alt="basket-logo"
+                class="basket-logo_header"
+                width="21px"
+                height="21px"
+              />
+            </button>
+            <span>Cart (0)</span>
+          </div>
         </div>
       </div>
     </header>
-    <section class="hero">
-      <div class="container">
-        <h1 class="hero-title">
-          <img src="./img/Banner.png" alt="hero-banner" class="hero__title" />
-        </h1>
-      </div>
-    </section>
-    <section class="about-us">
-      <div class="container">
-        <div class="about-us__content">
-          <img
-            src="./img/about-us-image.png"
-            alt="vitamins"
-            class="about-us__image"
-          />
-        </div>
-        <div class="about-us__text">
-          <h2 class="about-us__subtitle">About Us</h2>
-          <h3 class="about-us__heading">
-            We do Creative <br />
-            Things for Success
-          </h3>
-          <p class="about-us__description">
-            Simply dummy text of the printing and typesetting industry. Lorem
-            had ceased to been the industry's standard dummy text ever since the
-            1500s, when an unknown printer took a galley.
-          </p>
-          <p class="about-us__description-p2">
-            Simply dummy text of the printing and typesetting industry. Lorem
-            had ceased to been the industry's standard dummy text ever since the
-            1500s, when an unknown printer took a galley.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="features">
-      <div class="feature">
-        <img src="./img/Tractor.png" alt="tractor" class="tractor_icon" />
-        <span class="modern-culture">Modern Agriculture Equipment</span>
-      </div>
-      <div class="feature">
-        <img
-          src="./img/Chemical Plant.png"
-          alt="ChemicalPlant"
-          class="chemical_icon"
-        />
-        <span class="chemical-culture">No growth hormones are used</span>
-      </div>
-      <button class="btn explore-btn">
-        Explore More
-        <img src="./img/Aerrow.png" alt="" class="aerrow" />
-      </button>
-    </section>
   </body>
 </html>

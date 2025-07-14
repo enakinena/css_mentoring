@@ -215,10 +215,14 @@ span {
   align-items: center;
 
   color: rgba(39, 76, 91, 1);
-  font-size: 40px;
+  font-size: 30px;
   font-family: Roboto, sans-serif;
   background: url(./image/header_bg.png) no-repeat center/cover;
 
   height: 450px;
   margin-bottom: 68px;
+}
+
+.salad-container {
+  display: flex;
 }

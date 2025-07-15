@@ -223,6 +223,121 @@ span {
   margin-bottom: 68px;
 }
 
+.salad-text__descriptions h2 {
+  margin-top: 70px;
+  margin-bottom: 8px;
+}
+
 .salad-container {
   display: flex;
+  justify-content: space-between;
+  margin-top: 65px;
+
+  gap: 35px;
+}
+
+.salad-text {
+  max-width: 675px;
+  position: relative;
+  top: -35px;
+}
+
+.salad-text__descriptions h2 {
+  font-family: Yellowtail, sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 100%;
+
+  color: rgba(126, 182, 147, 1);
+}
+
+.salad-text__title {
+  font-family: Roboto, sans-serif;
+  font-weight: 800;
+  font-style: Bold;
+  font-size: 50px;
+  line-height: 100%;
+
+  color: rgba(39, 76, 91, 1);
+
+  margin-bottom: 14px;
+}
+
+.salad-block__img {
+  display: flex;
+  justify-content: space-between;
+}
+
+.salad-block__tractor {
+  display: flex;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  color: rgba(39, 76, 91, 1);
+
+  gap: 15px;
+}
+
+.salad-block__tractor img {
+  position: relative;
+  top: -4px;
+}
+
+.salad-block__factory {
+  display: flex;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  color: rgba(39, 76, 91, 1);
+
+  gap: 15px;
+}
+
+.salad-block__factory img {
+  position: relative;
+  top: -4px;
+}
+
+.salad-text__paragraph {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 165%;
+
+  color: rgba(82, 92, 96, 1);
+  margin-bottom: 40px;
+}
+
+.salad__background {
+  width: 900px;
+  height: 600px;
+}
+
+.salad-text__button {
+  margin-top: 58px;
+
+  width: 226px;
+  height: 80px;
+  border-radius: 16px;
+
+  padding: 28px 39px 29px 39px;
+  gap: 10px;
+  background-color: rgba(39, 76, 91, 1);
+
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 20px;
+  line-height: 100%;
+
+  color: rgba(255, 255, 255, 1);
+  border: 0;
+}
+
+.aerrow-btn {
+  position: relative;
+  left: 5px;
+  top: 3px;
 }

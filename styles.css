@@ -311,8 +311,14 @@ span {
 }
 
 .salad__background {
-  width: 900px;
-  height: 600px;
+  width: 950px;
+  height: 640px;
+  top: 10px;
+}
+
+.salad-container img {
+  position: relative;
+  top: -10px;
 }
 
 .salad-text__button {

@@ -542,6 +542,10 @@ span {
   .natural-item {
     padding: 0;
   }
+
+  .natural-container__item {
+    padding: 0 30px;
+  }
 }
 
 .natural {

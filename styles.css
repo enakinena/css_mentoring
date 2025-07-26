@@ -7,11 +7,6 @@
 .container {
   max-width: 1600px;
 
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 30px; */
-
   margin: 0 auto;
   padding: 0 30px;
 }
@@ -29,7 +24,7 @@
   align-items: center;
   gap: 30px;
 
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 @media (max-width: 1191px) {
